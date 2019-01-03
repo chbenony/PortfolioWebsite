@@ -1,0 +1,94 @@
+html{
+    scroll-behavior: smooth;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("portfolio-photo.jpeg");
+    background-size: cover;
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+body {
+    margin: 0;
+    font-family: 'Reem Kufi', sans-serif;
+}
+.hero {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.hero .hero-inner {
+    color: white;
+}
+.hero h1 {
+    font-size: 5em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero .btn {
+    display: block;
+    width: 200px;
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid white;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 20px;
+    color: white;
+}
+.sidebar-config {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidebar-config a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidebar-config a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar-config .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+
+}
+.openbtn {
+    height: 100%;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+}
+.openbtn:hover {
+    background-color: #444;
+}
+#main {
+    transition: margin-right .5s;
+    padding: 16px; 
+}
+@media screen and (max-height: 450px) {
+    .sidebar-config {padding-top: 15px;}
+    .sidebar-config a {font-size: 18px;}
+}
